@@ -184,10 +184,18 @@ a { color: inherit; text-decoration: none; }
   font-weight: 600;
   letter-spacing: -0.01em;
 }
-.tile-motorsport { background: linear-gradient(135deg, rgba(26,3,3,0.55), rgba(10,10,10,0.75)), url("https://static.wixstatic.com/media/093ede_266ddffc348841c3bccd763b283de18f.jpg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/093ede_266ddffc348841c3bccd763b283de18f.jpg") center/cover; }
-.tile-corporate  { background: linear-gradient(135deg, rgba(12,20,32,0.6), rgba(10,10,10,0.8)), url("https://static.wixstatic.com/media/e1c78c_8f2c0255955849019724a67353839dad.jpg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/e1c78c_8f2c0255955849019724a67353839dad.jpg") center/cover; }
-.tile-luxury     { background: linear-gradient(135deg, #241a08 0%, #4a3414 45%, #0a0a0a 100%); }
-.tile-gov        { background: linear-gradient(135deg, rgba(10,21,34,0.6), rgba(10,10,10,0.82)), url("https://static.wixstatic.com/media/e1c78c_8f4ea0a7d09d4d988d2f4021d296e0ba.jpg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/e1c78c_8f4ea0a7d09d4d988d2f4021d296e0ba.jpg") center/cover; }
+.tile-babolat       { background: linear-gradient(135deg, #1a1a1a 0%, #2b2b1a 55%, #0a0a0a 100%); }
+.tile-motorsport    { background: linear-gradient(135deg, rgba(26,3,3,0.55), rgba(10,10,10,0.75)), url("https://static.wixstatic.com/media/093ede_266ddffc348841c3bccd763b283de18f.jpg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/093ede_266ddffc348841c3bccd763b283de18f.jpg") center/cover; }
+.tile-cosmetics     { background: linear-gradient(135deg, rgba(20,20,10,0.35), rgba(10,10,10,0.55)), url("https://static.wixstatic.com/media/093ede_cd49e443e8b449479840ea3053b5e8c1~mv2.jpg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/093ede_cd49e443e8b449479840ea3053b5e8c1~mv2.jpg") center/cover; }
+.tile-rg            { background: linear-gradient(135deg, rgba(20,8,0,0.25), rgba(10,10,10,0.55)), url("https://static.wixstatic.com/media/093ede_46c523fb569847a3910f7c8c4db61fe9~mv2.jpg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/093ede_46c523fb569847a3910f7c8c4db61fe9~mv2.jpg") center/cover; }
+.tile-patrick-roger { background: linear-gradient(135deg, rgba(0,20,18,0.35), rgba(10,10,10,0.55)), url("https://static.wixstatic.com/media/093ede_d3458d952fa74da5b477769fc7e3282d~mv2.jpg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/093ede_d3458d952fa74da5b477769fc7e3282d~mv2.jpg") center/cover; }
+.tile-digital-agent { background: linear-gradient(135deg, rgba(10,10,10,0.5), rgba(10,10,10,0.75)), url("https://static.wixstatic.com/media/093ede_7e8653493a034fdd88692b185a2fc183~mv2.jpg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/093ede_7e8653493a034fdd88692b185a2fc183~mv2.jpg") center/cover; }
+.tile-sarto         { background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 55%, #0a0a0a 100%); }
+.tile-wrc           { background: linear-gradient(135deg, rgba(14,14,14,0.45), rgba(10,10,10,0.7)), url("https://static.wixstatic.com/media/093ede_8ea5275a2bbc47e28bf416a29a59cdab~mv2.jpg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/093ede_8ea5275a2bbc47e28bf416a29a59cdab~mv2.jpg") center/cover; }
+.tile-food-inc      { background: linear-gradient(135deg, rgba(30,10,10,0.4), rgba(10,10,10,0.65)), url("https://static.wixstatic.com/media/093ede_4091fe5fe4014abc8ef61ef6d8c97cf5~mv2.png/v1/fill/w_900,h_675,al_c,q_85,enc_auto/093ede_4091fe5fe4014abc8ef61ef6d8c97cf5~mv2.png") center/cover; }
+.tile-walkinshaw    { background: linear-gradient(135deg, rgba(10,10,10,0.25), rgba(10,10,10,0.55)), url("https://static.wixstatic.com/media/093ede_feb4afa888d14e4ea618e04d99dde70f~mv2.jpeg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/093ede_feb4afa888d14e4ea618e04d99dde70f~mv2.jpeg") center/cover; }
+.tile-monaco        { background: linear-gradient(135deg, rgba(10,21,34,0.5), rgba(10,10,10,0.72)), url("https://static.wixstatic.com/media/e1c78c_8f4ea0a7d09d4d988d2f4021d296e0ba.jpg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/e1c78c_8f4ea0a7d09d4d988d2f4021d296e0ba.jpg") center/cover; }
+.tile-toms          { background: linear-gradient(135deg, rgba(10,10,10,0.4), rgba(10,10,10,0.68)), url("https://static.wixstatic.com/media/093ede_88eb34c67745408099ab0dcc92bf2fd7~mv2.jpeg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/093ede_88eb34c67745408099ab0dcc92bf2fd7~mv2.jpeg") center/cover; }
 .work-tile:hover .tile-name { text-decoration: underline; text-underline-offset: 4px; }
 
 @media (max-width: 760px) {
