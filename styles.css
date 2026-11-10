@@ -169,9 +169,13 @@ a { color: inherit; text-decoration: none; }
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.55) 100%);
+  background-size: cover;
+  background-position: center;
+  transform: scale(1);
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
   z-index: 0;
 }
+.work-tile:hover::after { transform: scale(1.08); }
 .work-tile::before {
   content: "";
   position: absolute;
@@ -181,35 +185,37 @@ a { color: inherit; text-decoration: none; }
   height: 100%;
   background: linear-gradient(75deg, transparent 0%, rgba(255,255,255,0.45) 50%, transparent 100%);
   transform: skewX(-20deg);
-  z-index: 1;
+  z-index: 2;
   pointer-events: none;
   transition: left 0.65s ease;
 }
 .work-tile:hover::before { left: 125%; }
 .tile-cat, .tile-name { position: relative; z-index: 1; }
 .tile-cat {
-  color: rgba(255,255,255,0.75);
+  color: rgba(255,255,255,0.85);
   font-size: 13px;
   margin-bottom: 6px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.65), 0 2px 10px rgba(0,0,0,0.4);
 }
 .tile-name {
   color: var(--white);
   font-size: clamp(22px, 2.6vw, 34px);
   font-weight: 600;
   letter-spacing: -0.01em;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.7), 0 4px 16px rgba(0,0,0,0.45);
 }
-.tile-babolat       { background: linear-gradient(135deg, rgba(10,10,10,0.3), rgba(10,10,10,0.55)), url("images/babolat.jpg") center/cover; }
-.tile-motorsport    { background: linear-gradient(135deg, rgba(26,3,3,0.55), rgba(10,10,10,0.75)), url("https://static.wixstatic.com/media/093ede_266ddffc348841c3bccd763b283de18f.jpg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/093ede_266ddffc348841c3bccd763b283de18f.jpg") center/cover; }
-.tile-cosmetics     { background: linear-gradient(135deg, rgba(20,20,10,0.35), rgba(10,10,10,0.55)), url("https://static.wixstatic.com/media/093ede_cd49e443e8b449479840ea3053b5e8c1~mv2.jpg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/093ede_cd49e443e8b449479840ea3053b5e8c1~mv2.jpg") center/cover; }
-.tile-rg            { background: linear-gradient(135deg, rgba(20,8,0,0.25), rgba(10,10,10,0.55)), url("https://static.wixstatic.com/media/093ede_46c523fb569847a3910f7c8c4db61fe9~mv2.jpg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/093ede_46c523fb569847a3910f7c8c4db61fe9~mv2.jpg") center/cover; }
-.tile-patrick-roger { background: linear-gradient(135deg, rgba(0,20,18,0.35), rgba(10,10,10,0.55)), url("https://static.wixstatic.com/media/093ede_d3458d952fa74da5b477769fc7e3282d~mv2.jpg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/093ede_d3458d952fa74da5b477769fc7e3282d~mv2.jpg") center/cover; }
-.tile-digital-agent { background: linear-gradient(135deg, rgba(10,10,10,0.5), rgba(10,10,10,0.75)), url("https://static.wixstatic.com/media/093ede_7e8653493a034fdd88692b185a2fc183~mv2.jpg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/093ede_7e8653493a034fdd88692b185a2fc183~mv2.jpg") center/cover; }
-.tile-sarto         { background: linear-gradient(135deg, rgba(10,10,10,0.25), rgba(10,10,10,0.5)), url("images/sarto.jpg") center/cover; }
-.tile-wrc           { background: linear-gradient(135deg, rgba(14,14,14,0.45), rgba(10,10,10,0.7)), url("https://static.wixstatic.com/media/093ede_8ea5275a2bbc47e28bf416a29a59cdab~mv2.jpg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/093ede_8ea5275a2bbc47e28bf416a29a59cdab~mv2.jpg") center/cover; }
-.tile-food-inc      { background: linear-gradient(135deg, rgba(30,10,10,0.4), rgba(10,10,10,0.65)), url("https://static.wixstatic.com/media/093ede_4091fe5fe4014abc8ef61ef6d8c97cf5~mv2.png/v1/fill/w_900,h_675,al_c,q_85,enc_auto/093ede_4091fe5fe4014abc8ef61ef6d8c97cf5~mv2.png") center/cover; }
-.tile-walkinshaw    { background: linear-gradient(135deg, rgba(10,10,10,0.25), rgba(10,10,10,0.55)), url("https://static.wixstatic.com/media/093ede_feb4afa888d14e4ea618e04d99dde70f~mv2.jpeg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/093ede_feb4afa888d14e4ea618e04d99dde70f~mv2.jpeg") center/cover; }
-.tile-monaco        { background: linear-gradient(135deg, rgba(10,21,34,0.3), rgba(10,10,10,0.55)), url("images/monaco.jpg") center/cover; }
-.tile-toms          { background: linear-gradient(135deg, rgba(10,10,10,0.4), rgba(10,10,10,0.68)), url("https://static.wixstatic.com/media/093ede_88eb34c67745408099ab0dcc92bf2fd7~mv2.jpeg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/093ede_88eb34c67745408099ab0dcc92bf2fd7~mv2.jpeg") center/cover; }
+.tile-babolat::after       { background-image: url("images/babolat.jpg"); }
+.tile-motorsport::after    { background-image: url("https://static.wixstatic.com/media/093ede_266ddffc348841c3bccd763b283de18f.jpg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/093ede_266ddffc348841c3bccd763b283de18f.jpg"); }
+.tile-cosmetics::after     { background-image: url("https://static.wixstatic.com/media/093ede_cd49e443e8b449479840ea3053b5e8c1~mv2.jpg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/093ede_cd49e443e8b449479840ea3053b5e8c1~mv2.jpg"); }
+.tile-rg::after            { background-image: url("https://static.wixstatic.com/media/093ede_46c523fb569847a3910f7c8c4db61fe9~mv2.jpg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/093ede_46c523fb569847a3910f7c8c4db61fe9~mv2.jpg"); }
+.tile-patrick-roger::after { background-image: url("https://static.wixstatic.com/media/093ede_d3458d952fa74da5b477769fc7e3282d~mv2.jpg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/093ede_d3458d952fa74da5b477769fc7e3282d~mv2.jpg"); }
+.tile-digital-agent::after { background-image: url("https://static.wixstatic.com/media/093ede_7e8653493a034fdd88692b185a2fc183~mv2.jpg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/093ede_7e8653493a034fdd88692b185a2fc183~mv2.jpg"); }
+.tile-sarto::after         { background-image: url("images/sarto.jpg"); }
+.tile-wrc::after           { background-image: url("https://static.wixstatic.com/media/093ede_8ea5275a2bbc47e28bf416a29a59cdab~mv2.jpg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/093ede_8ea5275a2bbc47e28bf416a29a59cdab~mv2.jpg"); }
+.tile-food-inc::after      { background-image: url("https://static.wixstatic.com/media/093ede_4091fe5fe4014abc8ef61ef6d8c97cf5~mv2.png/v1/fill/w_900,h_675,al_c,q_85,enc_auto/093ede_4091fe5fe4014abc8ef61ef6d8c97cf5~mv2.png"); }
+.tile-walkinshaw::after    { background-image: url("https://static.wixstatic.com/media/093ede_feb4afa888d14e4ea618e04d99dde70f~mv2.jpeg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/093ede_feb4afa888d14e4ea618e04d99dde70f~mv2.jpeg"); }
+.tile-monaco::after        { background-image: url("images/monaco.jpg"); }
+.tile-toms::after          { background-image: url("https://static.wixstatic.com/media/093ede_88eb34c67745408099ab0dcc92bf2fd7~mv2.jpeg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/093ede_88eb34c67745408099ab0dcc92bf2fd7~mv2.jpeg"); }
 .work-tile:hover .tile-name { text-decoration: underline; text-underline-offset: 4px; }
 
 @media (max-width: 760px) {
