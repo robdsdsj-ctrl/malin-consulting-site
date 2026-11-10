@@ -105,7 +105,10 @@ a { color: inherit; text-decoration: none; }
   background:
     radial-gradient(ellipse 80% 60% at 85% 15%, rgba(214,40,40,0.35), transparent 60%),
     radial-gradient(ellipse 60% 50% at 10% 90%, rgba(255,255,255,0.06), transparent 60%),
-    linear-gradient(180deg, #050505 0%, #0a0a0a 60%, #000 100%);
+    linear-gradient(180deg, rgba(5,5,5,0.88) 0%, rgba(10,10,10,0.92) 60%, #000 100%),
+    url("https://static.wixstatic.com/media/e1c78c_4fc9fa3b76ad4b099fc7d0bb5378bc01.jpg/v1/fill/w_1920,h_1080,al_c,q_85,enc_auto/e1c78c_4fc9fa3b76ad4b099fc7d0bb5378bc01.jpg");
+  background-size: cover;
+  background-position: center;
 }
 .hero-content { position: relative; max-width: 1400px; margin: 0 auto; width: 100%; }
 .hero h1 {
@@ -181,10 +184,10 @@ a { color: inherit; text-decoration: none; }
   font-weight: 600;
   letter-spacing: -0.01em;
 }
-.tile-motorsport { background: linear-gradient(135deg, #1a0303 0%, #3a0a0a 45%, #0a0a0a 100%); }
-.tile-corporate  { background: linear-gradient(135deg, #0c1420 0%, #16263b 45%, #0a0a0a 100%); }
+.tile-motorsport { background: linear-gradient(135deg, rgba(26,3,3,0.55), rgba(10,10,10,0.75)), url("https://static.wixstatic.com/media/093ede_266ddffc348841c3bccd763b283de18f.jpg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/093ede_266ddffc348841c3bccd763b283de18f.jpg") center/cover; }
+.tile-corporate  { background: linear-gradient(135deg, rgba(12,20,32,0.6), rgba(10,10,10,0.8)), url("https://static.wixstatic.com/media/e1c78c_8f2c0255955849019724a67353839dad.jpg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/e1c78c_8f2c0255955849019724a67353839dad.jpg") center/cover; }
 .tile-luxury     { background: linear-gradient(135deg, #241a08 0%, #4a3414 45%, #0a0a0a 100%); }
-.tile-gov        { background: linear-gradient(135deg, #0a1522 0%, #122a44 45%, #0a0a0a 100%); }
+.tile-gov        { background: linear-gradient(135deg, rgba(10,21,34,0.6), rgba(10,10,10,0.82)), url("https://static.wixstatic.com/media/e1c78c_8f4ea0a7d09d4d988d2f4021d296e0ba.jpg/v1/fill/w_900,h_675,al_c,q_85,enc_auto/e1c78c_8f4ea0a7d09d4d988d2f4021d296e0ba.jpg") center/cover; }
 .work-tile:hover .tile-name { text-decoration: underline; text-underline-offset: 4px; }
 
 @media (max-width: 760px) {
